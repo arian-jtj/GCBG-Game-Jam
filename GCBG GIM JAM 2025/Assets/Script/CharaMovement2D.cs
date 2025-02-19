@@ -18,7 +18,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     void Update()
     {
         horizontalValue = Input.GetAxisRaw("Horizontal");
-        Debug.Log(horizontalValue);
+        //Debug.Log(horizontalValue);
     }
     void FixedUpdate()
     {
