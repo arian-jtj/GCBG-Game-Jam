@@ -28,12 +28,18 @@ public class TeleportPortal : MonoBehaviour
     {
         sign.SetActive(true);
     }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
        Debug.Log("chara stay");
         if (portalObjects.Contains(collision.gameObject))
         {
             return;
+        }
+
+        if (destination == null)
+        {
+            Debug.Log("destination is null!");
         }
 
         if (destination.TryGetComponent(out TeleportPortal destinationPortal))
@@ -52,5 +58,7 @@ public class TeleportPortal : MonoBehaviour
     {
         portalObjects.Remove(collision.gameObject);
         sign.SetActive(false);
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;
     }
 }
