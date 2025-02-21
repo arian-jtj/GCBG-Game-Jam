@@ -10,7 +10,7 @@ public class GridController : MonoBehaviour, IDropHandler
         Debug.Log("Item Dropped");
         if(eventData.pointerDrag != null)
         {
-            if(eventData.pointerDrag.GetComponent<DragAndDrop>().piecePositionInGrid == correspondingGridPosition)
+            if(eventData.pointerDrag.GetComponent<PieceController>().pieceName == correspondingGridPosition)
             {
                 Debug.Log("Correct");
             }
