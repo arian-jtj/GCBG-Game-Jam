@@ -5,6 +5,7 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEditor.Search;
+using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -13,8 +14,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogText;
 
     [Header("Choice")]
-    [SerializeField] private GameObject choices;
-    private TextMeshProUGUI choicesText;
+    [SerializeField] private GameObject[] choices;
+    private TextMeshProUGUI[] choicesText;
 
     private static DialogueManager instance;
     private Story currentStory;
@@ -39,11 +40,19 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
 
+
+        choicesText = new TextMeshProUGUI[choices.Length];
+        int index = 0;
+        foreach (GameObject choice in choices)
+        {
+            choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
+            index++;
+        }
     }
 
     private void Update()
     {
-        if (!dialogueIsPlaying) 
+        if (!dialogueIsPlaying)
         {
             return;
         }
@@ -61,7 +70,6 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(true);
 
         ContinueStory();
-
     }
 
     private IEnumerator ExitDialogueMode()
@@ -77,10 +85,50 @@ public class DialogueManager : MonoBehaviour
         if (currentStory.canContinue)
         {
             dialogText.text = currentStory.Continue();
+            DisplayChoices();
         }
         else
         {
-           StartCoroutine(ExitDialogueMode());
+            StartCoroutine(ExitDialogueMode());
         }
+    }
+
+private void DisplayChoices()
+{
+    List<Choice> currentChoices = currentStory.currentChoices;
+
+    if (currentChoices.Count > choices.Length)
+    {
+        Debug.LogError("Terlalu banyak pilihan: " + currentChoices.Count);
+    }
+
+    int index = 0; 
+
+    foreach (Choice choice in currentChoices)
+    {
+        choices[index].gameObject.SetActive(true);
+        choicesText[index].text = choice.text;
+        index++; 
+    }
+
+    for (int i = index; i < choices.Length; i++) 
+    {
+        choices[i].gameObject.SetActive(false);
+    }
+
+    StartCoroutine(SelectFirstChoice());
+}
+
+
+    private IEnumerator SelectFirstChoice()
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+        yield return new WaitForEndOfFrame();
+        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+    }
+
+    public void MakeChoice(int choiceIndex)
+    {
+        currentStory.ChooseChoiceIndex(choiceIndex);
     }
 }

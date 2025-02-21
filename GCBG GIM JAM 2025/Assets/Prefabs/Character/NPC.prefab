@@ -299,5 +299,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205fc7f5418f7b642923c251d6634ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DyingWomen: {fileID: 1199092244937883051}
   visualCue: {fileID: 2878224471214483965}
-  inkJSON: {fileID: 4900000, guid: 54842452960a64747ae72441c5deabd4, type: 3}
+  inkJSON: {fileID: 4900000, guid: 98b61697320c6cc48a9df27dcbf6e6ae, type: 3}

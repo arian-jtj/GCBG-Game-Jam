@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class DialogTrigger : MonoBehaviour
+public class Monologue1 : MonoBehaviour
 {
+
     [Header("Visualize Cue")]
     [SerializeField] private GameObject visualCue;
 
@@ -16,6 +17,7 @@ public class DialogTrigger : MonoBehaviour
     {
         playerInRange = false;
         visualCue.SetActive(false);
+
     }
 
     private void Update()
