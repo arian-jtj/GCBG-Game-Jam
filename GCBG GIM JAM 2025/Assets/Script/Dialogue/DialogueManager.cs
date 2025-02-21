@@ -12,6 +12,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogText;
 
+    [Header("Choice")]
+    [SerializeField] private GameObject choices;
+    private TextMeshProUGUI choicesText;
+
     private static DialogueManager instance;
     private Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
@@ -34,6 +38,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
+
     }
 
     private void Update()
