@@ -30,7 +30,7 @@ public class TeleportPortal : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-       // Debug.Log("chara stay");
+       //Debug.Log("chara stay");
         if (portalObjects.Contains(collision.gameObject))
         {
             return;
