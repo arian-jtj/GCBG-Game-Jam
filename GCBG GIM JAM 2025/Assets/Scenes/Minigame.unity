@@ -248,7 +248,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6862d341e607b04e8faf8671d173daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingGridPosition: BottomCenter
+  possibility1: 
+  possibility2: 
+  possibility3: 
+  detectedPieceInGrid: 
 --- !u!1 &313628540
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,6 +385,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1640705444}
+        m_TargetAssemblyTypeName: GridCheckerController, Assembly-CSharp
+        m_MethodName: CheckAllGrid
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &313628545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,7 +497,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6862d341e607b04e8faf8671d173daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingGridPosition: MiddleCenter
+  possibility1: 
+  possibility2: 
+  possibility3: 
+  detectedPieceInGrid: 
 --- !u!1 &702999140
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,7 +680,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6862d341e607b04e8faf8671d173daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingGridPosition: BottomLeft
+  possibility1: 
+  possibility2: 
+  possibility3: 
+  detectedPieceInGrid: 
 --- !u!1 &840565530
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,7 +772,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6862d341e607b04e8faf8671d173daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingGridPosition: MiddleRight
+  possibility1: 
+  possibility2: 
+  possibility3: 
+  detectedPieceInGrid: 
 --- !u!1 &861747176
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,7 +828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCanvas: {fileID: 1640705441}
-  piecePositionInGrid: TopRight
+  pieceName: 
 --- !u!114 &861747179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,7 +967,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6862d341e607b04e8faf8671d173daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingGridPosition: TopRight
+  possibility1: Red
+  possibility2: 
+  possibility3: 
+  detectedPieceInGrid: 
 --- !u!1 &969218243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,7 +1059,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6862d341e607b04e8faf8671d173daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingGridPosition: MiddleLeft
+  possibility1: 
+  possibility2: 
+  possibility3: 
+  detectedPieceInGrid: 
+--- !u!1 &975075213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 975075214}
+  m_Layer: 5
+  m_Name: GridChecker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &975075214
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975075213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1640705442}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1297838191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,7 +1186,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6862d341e607b04e8faf8671d173daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingGridPosition: BottomRight
+  possibility1: 
+  possibility2: 
+  possibility3: 
+  detectedPieceInGrid: 
 --- !u!1 &1301453578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,7 +1278,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6862d341e607b04e8faf8671d173daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingGridPosition: TopLeft
+  possibility1: Red
+  possibility2: 
+  possibility3: 
+  detectedPieceInGrid: 
 --- !u!1 &1334055800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,7 +1334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCanvas: {fileID: 1640705441}
-  piecePositionInGrid: MiddleCenter
+  pieceName: Red
 --- !u!114 &1334055803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1366,7 +1437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCanvas: {fileID: 1640705441}
-  piecePositionInGrid: TopLeft
+  pieceName: Red
 --- !u!114 &1343104086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1469,7 +1540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCanvas: {fileID: 1640705441}
-  piecePositionInGrid: BottomRight
+  pieceName: Red
 --- !u!114 &1375210619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1669,6 +1740,7 @@ GameObject:
   - component: {fileID: 1640705440}
   - component: {fileID: 1640705439}
   - component: {fileID: 1640705443}
+  - component: {fileID: 1640705444}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1755,6 +1827,7 @@ RectTransform:
   - {fileID: 1566044674}
   - {fileID: 171355086}
   - {fileID: 313628541}
+  - {fileID: 975075214}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1774,6 +1847,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6a72ad3f42b3547bc40a4b8f860781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1640705444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640705438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ec49c88fa456f14e976ed52307edabd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridsParent: {fileID: 1566044673}
+  possibility1: 
+  possibility2: 
+  possibility3: 
 --- !u!1 &1652344277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,7 +1994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCanvas: {fileID: 1640705441}
-  piecePositionInGrid: MiddleCenter
+  pieceName: 
 --- !u!114 &1783544675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2044,7 +2133,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6862d341e607b04e8faf8671d173daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingGridPosition: TopCenter
+  possibility1: 
+  possibility2: 
+  possibility3: 
+  detectedPieceInGrid: 
 --- !u!1 &2069673928
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,7 +2189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCanvas: {fileID: 1640705441}
-  piecePositionInGrid: BottomLeft
+  pieceName: 
 --- !u!114 &2069673931
 MonoBehaviour:
   m_ObjectHideFlags: 0
