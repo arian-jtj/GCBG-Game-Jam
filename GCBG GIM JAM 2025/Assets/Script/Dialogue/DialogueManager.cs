@@ -59,8 +59,9 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    private void ExitDialogueMode()
+    private IEnumerator ExitDialogueMode()
     {
+        yield return new WaitForSeconds(0.2f);
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogText.text = "";
@@ -74,7 +75,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            ExitDialogueMode();
+           StartCoroutine(ExitDialogueMode());
         }
     }
 }
