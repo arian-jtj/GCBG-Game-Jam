@@ -15,8 +15,8 @@ public class GridCheckerController : MonoBehaviour
     private bool allPiecesIsPossibility2 = false;
     private bool allPiecesIsPossibility3 = false;
 
-    private string[] piecesInGrid = new string[9];
-    private bool[] areGridsEmpty = new bool[9];
+    // private string[] piecesInGrid = new string[9];
+    // private bool[] areGridsEmpty = new bool[9];
 
     [Header("Possible Piece Combinations")]
     public string[] possibility1Checklist = new string[9];
@@ -58,8 +58,6 @@ public class GridCheckerController : MonoBehaviour
             {
                 Debug.Log(gridController[i].detectedPieceInGrid + " == " + possibility1Checklist[i]);
                 allPiecesIsPossibility1 = true;
-                allPiecesIsPossibility2 = false;
-                allPiecesIsPossibility3 = false;
             }
             else
             {
@@ -75,9 +73,7 @@ public class GridCheckerController : MonoBehaviour
             if(gridController[i].detectedPieceInGrid == possibility2Checklist[i])
             {
                 Debug.Log(gridController[i].detectedPieceInGrid + " == " + possibility2Checklist[i]);
-                allPiecesIsPossibility1 = false;
                 allPiecesIsPossibility2 = true;
-                allPiecesIsPossibility3 = false;
             }
             else
             {
@@ -93,8 +89,6 @@ public class GridCheckerController : MonoBehaviour
             if(gridController[i].detectedPieceInGrid == possibility3Checklist[i])
             {
                 Debug.Log(gridController[i].detectedPieceInGrid + " == " + possibility3Checklist[i]);
-                allPiecesIsPossibility1 = false;
-                allPiecesIsPossibility2 = false;
                 allPiecesIsPossibility3 = true;
             }
             else
