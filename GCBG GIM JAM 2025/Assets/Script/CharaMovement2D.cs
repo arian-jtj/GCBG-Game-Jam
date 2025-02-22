@@ -59,24 +59,27 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
+            Debug.Log("Dialog lagi jalan dialognpc bukan?" + isMonologue);
             canMove = isMonologue; // Jika isMonologue = true, player tetap bisa bergerak
         }
         else
         {
             canMove = true; // Jika tidak ada dialog, player bisa bergerak bebas
         }
+        Debug.Log(""+ canMove);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("NPCDialogue"))
         {
-            isMonologue = false; // NPC berbicara ? Player harus berhenti
+            isMonologue = false;
             canMove = false;
         }
         else if (collider.CompareTag("Monologue"))
         {
-            isMonologue = true; // Monolog ? Player bisa tetap bergerak
+            isMonologue = true;
+            canMove = true;
         }
     }
 

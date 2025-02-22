@@ -1,44 +1,34 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Monologue1 : MonoBehaviour
 {
-
-    [Header("Visualize Cue")]
-    [SerializeField] private GameObject visualCue;
+    [SerializeField] private GameObject Monologue;
 
     [Header("INK JSON")]
     [SerializeField] private TextAsset inkJSON;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    
+
     private bool playerInRange;
+    private bool dialogueStarted; // Cegah dialog diulang terus-menerus
 
     private void Awake()
     {
         playerInRange = false;
-        visualCue.SetActive(false);
-
+        dialogueStarted = false;
     }
 
     private void Update()
     {
-        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying) { 
-            visualCue.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-            }
-        }
-        else
+        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying && !dialogueStarted)
         {
-            visualCue.SetActive(false);
+            dialogueStarted = true; // Cegah dialog diulang
+            DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Player")
+        if (collider.CompareTag("Player"))
         {
             playerInRange = true;
         }
@@ -46,7 +36,7 @@ public class Monologue1 : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Player")
+        if (collider.CompareTag("Player"))
         {
             playerInRange = false;
         }

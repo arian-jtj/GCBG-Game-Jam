@@ -2,9 +2,9 @@
 -> main
 
 ===main===
-"Excuse me, I am dying of thirst, it's been a while since I drank anything.." #Dying Women
+"Excuse me, I am dying of thirst, it's been a while since I drank anything.." #Dying Woman
 
-Can you tell me where might I find water or anything to drink? #Dying Women
+Can you tell me where might I find water or anything to drink? #Dying Woman
 
 Dr. Hyde steps halted.
 
