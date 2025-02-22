@@ -22,6 +22,10 @@ public class NewMonoBehaviourScript : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            return;
+        }
         Move(horizontalValue);
     }
 
@@ -43,3 +47,4 @@ public class NewMonoBehaviourScript : MonoBehaviour
         }
     }
 }
+
