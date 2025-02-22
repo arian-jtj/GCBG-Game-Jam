@@ -1,8 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class DialogTrigger : MonoBehaviour
+public class HomelessMan : MonoBehaviour
 {
+    [SerializeField] private GameObject Homelessman;
+
     [Header("Visualize Cue")]
     [SerializeField] private GameObject visualCue;
 
@@ -11,11 +15,13 @@ public class DialogTrigger : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     private bool playerInRange;
+    private bool DialogueStart;
 
     private void Awake()
     {
         playerInRange = false;
         visualCue.SetActive(false);
+        DialogueStart = false;
     }
 
     private void Update()
@@ -24,7 +30,10 @@ public class DialogTrigger : MonoBehaviour
             visualCue.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
+                DialogueStart = true;
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+
+                StartCoroutine(HomelessmanDead());
             }
         }
         else
@@ -49,4 +58,11 @@ public class DialogTrigger : MonoBehaviour
             playerInRange = false;
         }
     }
+
+    IEnumerator HomelessmanDead()
+    {
+        yield return new WaitForSeconds(30);
+        Homelessman.SetActive(false);
+    }
+        
 }
