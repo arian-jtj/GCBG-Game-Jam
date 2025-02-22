@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Movement Test.unity
     guid: e04a007d57d75394aabc8bdca012c097
+  - enabled: 0
+    path: Assets/Scenes/World1.unity
+    guid: 7eeab04640cedea47a3de30b62a90f39
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 77c8f91df72392d4699edcca5faf3fd1, type: 3}
   m_UseUCBPForAssetBundles: 0
