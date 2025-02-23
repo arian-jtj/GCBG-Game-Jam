@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Monologue1 : MonoBehaviour
+public class Monologue : MonoBehaviour
 {
-    [SerializeField] private GameObject Monologue;
+    [SerializeField] private GameObject monologue;
 
     [Header("INK JSON")]
     [SerializeField] private TextAsset inkJSON;
