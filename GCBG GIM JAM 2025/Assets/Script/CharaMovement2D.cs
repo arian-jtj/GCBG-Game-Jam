@@ -47,12 +47,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
         if (facingRight && dir < 0)
         {
-            transform.localScale = new Vector3(-0.5f, 0.5f, 0.5f);
+            transform.localScale = new Vector3(-0.35f, 0.35f, 0.35f);
             facingRight = false;
         }
         else if (!facingRight && dir > 0)
         {
-            transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            transform.localScale = new Vector3(0.35f, 0.35f, 0.35f);
             facingRight = true;
         }
     }
