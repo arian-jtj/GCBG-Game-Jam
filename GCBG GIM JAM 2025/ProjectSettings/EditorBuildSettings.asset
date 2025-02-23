@@ -8,12 +8,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 8b4fab423428a98458c1d338fb0d4f9c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Movement Test.unity
     guid: e04a007d57d75394aabc8bdca012c097
   - enabled: 0
     path: Assets/Scenes/World1.unity
     guid: 7eeab04640cedea47a3de30b62a90f39
+  - enabled: 1
+    path: Assets/Scenes/Placeholders/DummyStage1.unity
+    guid: f081d1d9c59c0d049b24206abfbfbf45
+  - enabled: 1
+    path: Assets/Scenes/Placeholders/DummyStage2.unity
+    guid: 29f83ec12e6626d46bf199b76d899068
+  - enabled: 1
+    path: Assets/Scenes/Placeholders/DummyStage3.unity
+    guid: c6c07fcbe2519de47bc364693f06e555
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 77c8f91df72392d4699edcca5faf3fd1, type: 3}
   m_UseUCBPForAssetBundles: 0

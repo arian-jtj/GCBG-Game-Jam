@@ -16,7 +16,7 @@ MonoBehaviour:
   haveDiary: 0
   haveLighter: 0
   haveZincDust: 0
-  haveCompass: 0
+  haveCompass: 1
   havePotion: 0
   haveMedicine: 0
   haveBlueCard: 0
