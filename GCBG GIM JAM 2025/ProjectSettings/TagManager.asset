@@ -40,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Objects
+    uniqueID: 4168557649
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
