@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
+
+    private PlayerInventoryValue item;
     // Public fields
     public float speed = 1;
 
@@ -45,12 +47,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
         if (facingRight && dir < 0)
         {
-            transform.localScale = new Vector3(-0.5f, 0.5f, 0.5f);
+            transform.localScale = new Vector3(-0.35f, 0.35f, 0.35f);
             facingRight = false;
         }
         else if (!facingRight && dir > 0)
         {
-            transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            transform.localScale = new Vector3(0.35f, 0.35f, 0.35f);
             facingRight = true;
         }
     }
@@ -59,14 +61,14 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            Debug.Log("Dialog lagi jalan dialognpc bukan?" + isMonologue);
+            //Debug.Log("Dialog lagi jalan dialognpc bukan?" + isMonologue);
             canMove = isMonologue; // Jika isMonologue = true, player tetap bisa bergerak
         }
         else
         {
             canMove = true; // Jika tidak ada dialog, player bisa bergerak bebas
         }
-        Debug.Log(""+ canMove);
+        //Debug.Log(""+ canMove);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
