@@ -1,3 +1,4 @@
+using Ink.Parsed;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,10 +13,12 @@ public class DyingWomanDialogue: MonoBehaviour
 
     [Header("INK JSON")]
     [SerializeField] private TextAsset inkJSON;
+    [SerializeField] private TextAsset inkJSON2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    
+
     private bool playerInRange;
     private bool DialogueStart;
+    public PlayerInventoryValue item;
 
     private void Awake()
     {
@@ -26,11 +29,12 @@ public class DyingWomanDialogue: MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying) { 
+        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying && !DialogueStart) { 
             visualCue.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
                 DialogueStart = true;
+                item.haveCompass = true;
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
 
                 StartCoroutine(DyingWomanDead());
