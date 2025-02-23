@@ -1,10 +1,14 @@
+using Ink.Parsed;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class HomelessMan : MonoBehaviour
 {
+    public PlayerInventoryValue item;
+
     [SerializeField] private GameObject Homelessman;
 
     [Header("Visualize Cue")]
@@ -12,7 +16,6 @@ public class HomelessMan : MonoBehaviour
 
     [Header("INK JSON")]
     [SerializeField] private TextAsset inkJSON;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     private bool playerInRange;
     private bool DialogueStart;
@@ -26,7 +29,7 @@ public class HomelessMan : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying) { 
+        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying && !DialogueStart) { 
             visualCue.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {

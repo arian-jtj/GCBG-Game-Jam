@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
+
+    private PlayerInventoryValue item;
     // Public fields
     public float speed = 1;
 
@@ -59,14 +61,14 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            Debug.Log("Dialog lagi jalan dialognpc bukan?" + isMonologue);
+            //Debug.Log("Dialog lagi jalan dialognpc bukan?" + isMonologue);
             canMove = isMonologue; // Jika isMonologue = true, player tetap bisa bergerak
         }
         else
         {
             canMove = true; // Jika tidak ada dialog, player bisa bergerak bebas
         }
-        Debug.Log(""+ canMove);
+        //Debug.Log(""+ canMove);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
