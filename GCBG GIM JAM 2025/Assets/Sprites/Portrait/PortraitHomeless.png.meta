@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PortraitHomeless_0: 9183821493333713291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

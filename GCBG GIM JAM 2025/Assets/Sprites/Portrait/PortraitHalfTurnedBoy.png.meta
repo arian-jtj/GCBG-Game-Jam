@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PortraitHalfTurnedBoy_0: -5238737699852040686
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

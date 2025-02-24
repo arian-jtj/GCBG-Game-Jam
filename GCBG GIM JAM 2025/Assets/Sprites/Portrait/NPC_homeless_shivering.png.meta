@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NPC_homeless_shivering_0: -3963730876474536400
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
