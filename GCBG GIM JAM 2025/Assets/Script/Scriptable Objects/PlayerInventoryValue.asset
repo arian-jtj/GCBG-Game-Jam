@@ -19,8 +19,8 @@ MonoBehaviour:
   haveCompass: 0
   havePotion: 0
   haveMedicine: 0
-  haveBlueCard: 0
-  haveRedCard: 1
+  haveBlueCard: 1
+  haveRedCard: 0
   haveGoggles: 0
   havePaperFromChest: 0
   haveWrench: 0
@@ -30,3 +30,7 @@ MonoBehaviour:
   haveGadget: 0
   haveRubyRing: 0
   haveOldRadio: 0
+  isCompassReceivedFromNPC: 0
+  isRedCardReceivedFromNPC: 0
+  isBlueCardReceivedFromNPC: 0
+  isLastKeyReceivedFromNPC: 0
