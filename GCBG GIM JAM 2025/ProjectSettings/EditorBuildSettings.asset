@@ -11,12 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Movement Test.unity
     guid: e04a007d57d75394aabc8bdca012c097
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/World1.unity
     guid: 7eeab04640cedea47a3de30b62a90f39
   - enabled: 1
     path: Assets/Scenes/Placeholders/DummyStage1.unity
-    guid: f081d1d9c59c0d049b24206abfbfbf45
+    guid: 8fa35f33157f1c647aad61dbd3af3404
   - enabled: 1
     path: Assets/Scenes/Placeholders/DummyStage2.unity
     guid: 29f83ec12e6626d46bf199b76d899068

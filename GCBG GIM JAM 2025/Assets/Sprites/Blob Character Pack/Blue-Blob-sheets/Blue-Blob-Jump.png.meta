@@ -297,7 +297,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blue-Blob-Jump_0: -4292629864712407797
+      Blue-Blob-Jump_1: 2300047278203288575
+      Blue-Blob-Jump_2: 1938142747434319508
+      Blue-Blob-Jump_3: -8621138341184386612
+      Blue-Blob-Jump_4: 2890882891838394418
+      Blue-Blob-Jump_5: -1351457839248253817
+      Blue-Blob-Jump_6: -809653780639764844
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
