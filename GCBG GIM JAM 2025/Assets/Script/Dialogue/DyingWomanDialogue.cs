@@ -13,12 +13,12 @@ public class DyingWomanDialogue: MonoBehaviour
 
     [Header("INK JSON")]
     [SerializeField] private TextAsset inkJSON;
-    [SerializeField] private TextAsset inkJSON2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private bool playerInRange;
     private bool DialogueStart;
     public PlayerInventoryValue item;
+    public TalkingStateNPC stateNPC;
 
     private void Awake()
     {
@@ -35,6 +35,7 @@ public class DyingWomanDialogue: MonoBehaviour
             {
                 DialogueStart = true;
                 item.haveCompass = true;
+                stateNPC.TalkingToDyingWoman = true;
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
 
                 StartCoroutine(DyingWomanDead());

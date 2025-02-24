@@ -1,3 +1,6 @@
+#Speaker:  #portrait:default 
+#Speaker:Dr.Hyde #layout:left #portrait:Dr_Hyde
+#Speaker:Imjured Boy #layout:left #portrait:InjuredMan
 
 "There's a...uh, medicinal solution I could brew, something to help your wound and ease the pain. An elixir made from the essence of..."#Speaker:Dr.Hyde #layout:left #portrait:Dr_Hyde
 
@@ -9,7 +12,7 @@ There was a childlike glee shining in his eyes. #Speaker:  #portrait:default
 
 The light shone and touching the darkest corners of Hyde's heart with warmth, much like a cup of hot chocolate on a rainy day. #Speaker:  #portrait:default 
 
-"You're the kindest person ever! I owe you my life!" 
+"You're the kindest person ever! I owe you my life!"  #Speaker:Imjured Boy #layout:left #portrait:InjuredMan
 
 Hyde's hand reached out to ruffle the boy's hair in gentle motion. #Speaker:  #portrait:default 
 
@@ -21,7 +24,7 @@ He looks up, Hyde could see his mind is whirring inside. #Speaker:  #portrait:de
 
 With what strength left in little body, the boy rummage through his clothes and pulled out Red card, shoving it right in front of Hyde's face. #Speaker:  #portrait:default 
 
-"For the beacon. You're gonna need it. I don't want to be indebted to you." #Speaker:  #portrait:default 
+"For the beacon. You're gonna need it. I don't want to be indebted to you." #Speaker:Imjured Boy #layout:left #portrait:InjuredMan
 
 Dr. Hyde nodded thankfully and accept it. #Speaker:  #portrait:default 
 

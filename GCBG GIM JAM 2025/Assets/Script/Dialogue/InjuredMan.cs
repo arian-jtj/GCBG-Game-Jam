@@ -21,6 +21,7 @@ public class InjuredMan : MonoBehaviour
     private bool playerInRange;
     private bool DialogueStart;
     private string minigameResult = "";
+    //private hasilminigame;
 
     private void Awake()
     {

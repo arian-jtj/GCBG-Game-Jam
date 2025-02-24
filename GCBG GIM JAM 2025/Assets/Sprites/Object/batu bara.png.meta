@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      batu bara_0: -1300901521348697714
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
