@@ -786,7 +786,7 @@ MonoBehaviour:
   WorldBGM2: {fileID: 0}
   WorldBGM3: {fileID: 0}
   Walking: {fileID: 0}
-  background: {fileID: 8300000, guid: c8e7c2df7b61d3945985e8d7728759ce, type: 3}
+  background: {fileID: 8300000, guid: a1018f66ac7743045af9f64044ed96fb, type: 3}
 --- !u!4 &1028402030
 Transform:
   m_ObjectHideFlags: 0

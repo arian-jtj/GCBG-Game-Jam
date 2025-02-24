@@ -330,7 +330,7 @@ MonoBehaviour:
   WorldBGM2: {fileID: 0}
   WorldBGM3: {fileID: 0}
   Walking: {fileID: 0}
-  background: {fileID: 8300000, guid: 178fd8b64a8cfb54789650abc2ce4193, type: 3}
+  background: {fileID: 8300000, guid: 07e55f7e41a689d49ab7fc3cc2ab241a, type: 3}
 --- !u!4 &41341691
 Transform:
   m_ObjectHideFlags: 0
