@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 
-public class HomelessMan : MonoBehaviour
+public class HomelessManDialogue : MonoBehaviour
 {
     public PlayerInventoryValue item;
 
@@ -16,7 +16,11 @@ public class HomelessMan : MonoBehaviour
 
     [Header("INK JSON")]
     [SerializeField] private TextAsset inkJSON;
-    
+
+    [SerializeField] private GameObject dialogue1Button;
+    [SerializeField] private GameObject dialogue2Button;
+
+
     private bool playerInRange;
     private bool DialogueStart;
 
@@ -35,8 +39,11 @@ public class HomelessMan : MonoBehaviour
             {
                 DialogueStart = true;
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-
+                
                 StartCoroutine(HomelessmanDead());
+
+                dialogue1Button.SetActive(true);
+                dialogue2Button.SetActive(true);
             }
         }
         else
