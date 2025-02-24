@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bubuk zinc_0: 4462751437793907092
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

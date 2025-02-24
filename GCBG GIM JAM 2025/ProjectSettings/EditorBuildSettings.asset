@@ -11,18 +11,28 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Movement Test.unity
     guid: e04a007d57d75394aabc8bdca012c097
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/World1.unity
     guid: 7eeab04640cedea47a3de30b62a90f39
   - enabled: 1
     path: Assets/Scenes/Placeholders/DummyStage1.unity
-    guid: f081d1d9c59c0d049b24206abfbfbf45
+    guid: 8fa35f33157f1c647aad61dbd3af3404
   - enabled: 1
     path: Assets/Scenes/Placeholders/DummyStage2.unity
     guid: 29f83ec12e6626d46bf199b76d899068
   - enabled: 1
     path: Assets/Scenes/Placeholders/DummyStage3.unity
     guid: c6c07fcbe2519de47bc364693f06e555
+  - enabled: 1
+    path: Assets/Scenes/World2.unity
+    guid: b8265cf40ca400b43a25b74b8130b4ec
+  - enabled: 1
+    path: Assets/Scenes/World3.unity
+    guid: 2b9df3e17208b764fb7767c31438349c
+  - enabled: 1
+    path: Assets/Scenes/Minigames/MinigameClover.unity
+    guid: 5d53eb1cae9722247a05bbd5ba618d90
   m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: dada7f51dd8e9784896518538676915c, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 77c8f91df72392d4699edcca5faf3fd1, type: 3}
   m_UseUCBPForAssetBundles: 0

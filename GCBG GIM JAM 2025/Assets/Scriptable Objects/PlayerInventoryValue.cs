@@ -24,10 +24,16 @@ public class PlayerInventoryValue : ScriptableObject
     public bool haveRubyRing;
     public bool haveOldRadio;
 
+
+    public bool isCompassReceivedFromNPC;
+    public bool isRedCardReceivedFromNPC;
+    public bool isBlueCardReceivedFromNPC;
+    public bool isLastKeyReceivedFromNPC;
+
     private void OnEnable()
     {
         haveDiary = valueOnReset;
-        haveLighter = valueOnReset;
+        //haveLighter = valueOnReset;
         haveZincDust = valueOnReset;
         haveCompass = valueOnReset;
         havePotion = valueOnReset;
@@ -35,7 +41,7 @@ public class PlayerInventoryValue : ScriptableObject
         haveBlueCard = valueOnReset;
         haveRedCard = valueOnReset;
         haveGoggles = valueOnReset;
-        havePaperFromChest = valueOnReset;
+        //havePaperFromChest = valueOnReset;
         haveWrench = valueOnReset;
         haveEarthCore = valueOnReset;
         haveLastKey = valueOnReset;
@@ -43,5 +49,11 @@ public class PlayerInventoryValue : ScriptableObject
         haveGadget = valueOnReset;
         haveRubyRing = valueOnReset;
         haveOldRadio = valueOnReset;
+
+        isBlueCardReceivedFromNPC = valueOnReset;
+        isCompassReceivedFromNPC = valueOnReset;
+        isRedCardReceivedFromNPC = valueOnReset;
+        isLastKeyReceivedFromNPC = valueOnReset;
+
     }
 }

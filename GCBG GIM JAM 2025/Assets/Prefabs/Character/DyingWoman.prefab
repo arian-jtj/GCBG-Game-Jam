@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5400877781072266210}
   m_Layer: 0
   m_Name: DyingWoman
-  m_TagString: Untagged
+  m_TagString: NPCDialogue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1858651341921586637}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 81.37, y: -1.11, z: 0.18002631}
+  m_LocalPosition: {x: -35.182423, y: 1.3092605, z: -0.12894611}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -60,8 +60,8 @@ Transform:
   m_GameObject: {fileID: 6023607710177078423}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0285, y: -0.73, z: 0}
-  m_LocalScale: {x: 0.12672846, y: 0.13791555, z: 0.044361524}
+  m_LocalPosition: {x: 0.0015, y: -0.97, z: 0}
+  m_LocalScale: {x: 0.111199684, y: 0.10460078, z: 0.057513826}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5400877781072266210}
@@ -115,7 +115,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 12.271314, y: 27.469997}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -196,7 +196,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 6770570448624154634, guid: fabe5eff0a8269743a8c1493b2d90831, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 1273548931846437475}
   m_Layer: 0
   m_Name: Trigger
-  m_TagString: Untagged
+  m_TagString: NPCDialogue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -302,5 +302,5 @@ MonoBehaviour:
   DyingWoman: {fileID: 1858651341921586637}
   visualCue: {fileID: 6110854584456414687}
   inkJSON: {fileID: 4900000, guid: 3933afc40250749419bde9256de70d73, type: 3}
-  inkJSON2: {fileID: 0}
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: f41fc35e6d5458440a26529fe218dc99, type: 2}
+  stateNPC: {fileID: 11400000, guid: b88a1a1e6f3cf3148aada1f92f8ac500, type: 2}
