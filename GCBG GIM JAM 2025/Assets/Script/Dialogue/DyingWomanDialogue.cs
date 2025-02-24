@@ -66,7 +66,7 @@ public class DyingWomanDialogue: MonoBehaviour
 
     IEnumerator DyingWomanDead()
     {
-        yield return new WaitForSeconds(30);
+        yield return new WaitForSeconds(10);
         DyingWoman.SetActive(false);
     }
         
