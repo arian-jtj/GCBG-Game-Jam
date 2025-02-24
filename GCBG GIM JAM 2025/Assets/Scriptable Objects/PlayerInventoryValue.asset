@@ -20,7 +20,7 @@ MonoBehaviour:
   havePotion: 0
   haveMedicine: 0
   haveBlueCard: 0
-  haveRedCard: 0
+  haveRedCard: 1
   haveGoggles: 0
   havePaperFromChest: 0
   haveWrench: 0

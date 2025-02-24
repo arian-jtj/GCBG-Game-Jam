@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blue-Blob-Run_0: 2462019744240909179
+      Blue-Blob-Run_1: -7146526282771478868
+      Blue-Blob-Run_2: -2939695758163712291
+      Blue-Blob-Run_3: -322194551112399739
+      Blue-Blob-Run_4: 2604580846551578087
+      Blue-Blob-Run_5: -3398231941159464578
+      Blue-Blob-Run_6: 1881639263144702921
+      Blue-Blob-Run_7: -1408577757202384051
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
