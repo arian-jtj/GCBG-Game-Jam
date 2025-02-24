@@ -4,15 +4,15 @@ using UnityEngine.Video;
 
 public class GridController : MonoBehaviour, IDropHandler
 {
-    [Header("Grid Corresponding Possibilities")]
-    public string possibility1;
-    public string possibility2;
-    public string possibility3;
-
-    [Header("Grid Properties [Leave Empty]")]
-    public string detectedPieceInGrid = "0";
+    // [Header("Grid Corresponding Possibilities")]
+    // public string possibility1;
+    // public string possibility2;
+    // public string possibility3;
 
     public bool isGridEmpty = true;
+
+    [Header("Grid Properties [Leave it at 0]")]
+    public string detectedPieceInGrid = "0";
 
     void OnTriggerStay2D(Collider2D collision)
     {
@@ -32,7 +32,7 @@ public class GridController : MonoBehaviour, IDropHandler
         // If the pointer is dropping something
         if(eventData.pointerDrag != null)
         {
-            // If it's the correct piece that is dropped
+            // // If it's the correct piece that is dropped
             // if(eventData.pointerDrag.GetComponent<PieceController>().pieceName == possibility1 || eventData.pointerDrag.GetComponent<PieceController>().pieceName == possibility2 || eventData.pointerDrag.GetComponent<PieceController>().pieceName == possibility3)
             // {
                 detectedPieceInGrid = eventData.pointerDrag.GetComponent<PieceController>().pieceName;
