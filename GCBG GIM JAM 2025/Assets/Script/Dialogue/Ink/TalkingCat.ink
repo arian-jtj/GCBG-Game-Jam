@@ -2,6 +2,8 @@
 #Speaker:  #portrait: default 
 #Speaker:RoboticCat  #layout:left #portrait: RoboticCat
 
+->main
+
 ===main===
 
 In the middle of the monotone chinks that echoed throughout the silence, a loud clunks snaps Dr. Hyde back from his own thoughts. #Speaker:  #portrait: default 

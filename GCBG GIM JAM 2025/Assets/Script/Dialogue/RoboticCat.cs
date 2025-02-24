@@ -7,7 +7,8 @@ using UnityEngine.InputSystem;
 
 public class RoboticCat : MonoBehaviour
 {
-    private PlayerInventoryValue item;
+    public PlayerInventoryValue item;
+    public TalkingStateNPC npc;
 
     [SerializeField] private GameObject RobotKucingRusak;
     [SerializeField] private GameObject RobotKucingBenar;
@@ -36,6 +37,7 @@ public class RoboticCat : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 DialogueStart = true;
+                npc.TalkingtoCat = true;
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
 
                 RepairRobotCat();
@@ -66,7 +68,9 @@ public class RoboticCat : MonoBehaviour
 
     private void RepairRobotCat()
     {
-        RobotKucingRusak.transform.position = new Vector3(16, 5, 0);
-        RobotKucingBenar.SetActive(true);
+        RobotKucingRusak.transform.position = new Vector3(9999, 9999, 0);
+        RobotKucingRusak.SetActive(false);
+
+        RobotKucingBenar.SetActive(true) ;
     }
 }
