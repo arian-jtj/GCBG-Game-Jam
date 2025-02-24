@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PortraitGadisKehausan_0: -1803183625642406987
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

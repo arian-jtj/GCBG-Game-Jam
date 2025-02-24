@@ -2,14 +2,23 @@ using UnityEngine;
 
 public class BeaconButtonPrompt : MonoBehaviour
 {
-    [SerializeField] private GameObject beaconButtons;
+    [SerializeField] private GameObject beaconSingleButton;
+    [SerializeField] private GameObject beaconDoubleButtons;
+    [SerializeField] private PlayerWorldHistory currentPlayerWorldHistory;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Collision Enter");
         if(collision.gameObject.CompareTag("Player"))
         {
-            beaconButtons.SetActive(true);
+            if(currentPlayerWorldHistory.hadBeenToWorld2 && currentPlayerWorldHistory.hadBeenToWorld3)
+            {
+                beaconDoubleButtons.SetActive(true);
+            }
+            else
+            {
+                beaconSingleButton.SetActive(true);
+            }
         }
     }
 
@@ -18,7 +27,8 @@ public class BeaconButtonPrompt : MonoBehaviour
         Debug.Log("Collision Exit");
         if(collision.gameObject.CompareTag("Player"))
         {
-            beaconButtons.SetActive(false);
+            beaconDoubleButtons.SetActive(false);
+            beaconSingleButton.SetActive(false);
         }
     }
 }

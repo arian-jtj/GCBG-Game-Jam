@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      npc_remaja_half_turned_0: -3709198871874111998
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

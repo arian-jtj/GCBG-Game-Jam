@@ -16,11 +16,11 @@ MonoBehaviour:
   haveDiary: 0
   haveLighter: 0
   haveZincDust: 0
-  haveCompass: 1
+  haveCompass: 0
   havePotion: 0
   haveMedicine: 0
   haveBlueCard: 0
-  haveRedCard: 0
+  haveRedCard: 1
   haveGoggles: 0
   havePaperFromChest: 0
   haveWrench: 0

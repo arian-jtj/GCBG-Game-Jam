@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NPC CAT broken jet_0: -6489812584558195598
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

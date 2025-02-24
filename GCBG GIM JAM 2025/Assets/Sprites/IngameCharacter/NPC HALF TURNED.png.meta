@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NPC HALF TURNED_0: -959603363443728647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
