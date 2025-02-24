@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 
 public class DrNichole1 : MonoBehaviour
@@ -20,12 +21,22 @@ public class DrNichole1 : MonoBehaviour
     private bool playerInRange;
     private bool DialogueStart;
 
+    public string transitionSceneToMinigame;
+
+    // [SerializeField] private NPCHaveTalked currentNPCHaveTalked;
+    // private BoxCollider2D _collider;
+
     private void Awake()
     {
         playerInRange = false;
         visualCue.SetActive(false);
         DialogueStart = false;
     }
+
+    // void Start()
+    // {
+    //     _collider = GetComponent<BoxCollider2D>();
+    // }
 
     private void Update()
     {
@@ -65,8 +76,9 @@ public class DrNichole1 : MonoBehaviour
 
     IEnumerator DrNicholeDead()
     {
-        yield return new WaitForSeconds(50);
+        yield return new WaitForSeconds(10);
         DrNichole.SetActive(false);
+        SceneManager.LoadSceneAsync(transitionSceneToMinigame);
     }
         
 }
