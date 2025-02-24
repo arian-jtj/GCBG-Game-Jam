@@ -1748,6 +1748,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4292991708906142559, guid: fafa28dcba3d3a5429593ab82fa27ba5, type: 3}
+      propertyPath: transitionSceneToBadEnd
+      value: Bad
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292991708906142559, guid: fafa28dcba3d3a5429593ab82fa27ba5, type: 3}
+      propertyPath: transitionSceneToTrueEnd
+      value: True
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292991708906142559, guid: fafa28dcba3d3a5429593ab82fa27ba5, type: 3}
+      propertyPath: transitionSceneToNormalEnd
+      value: Normal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

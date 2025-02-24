@@ -1270,6 +1270,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4292991708906142559, guid: fafa28dcba3d3a5429593ab82fa27ba5, type: 3}
+      propertyPath: transitionSceneToBadEnd
+      value: Bad
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292991708906142559, guid: fafa28dcba3d3a5429593ab82fa27ba5, type: 3}
+      propertyPath: transitionSceneToTrueEnd
+      value: True
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292991708906142559, guid: fafa28dcba3d3a5429593ab82fa27ba5, type: 3}
+      propertyPath: transitionSceneToNormalEnd
+      value: Normal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2121,6 +2133,10 @@ PrefabInstance:
     - target: {fileID: 1265613578859479214, guid: 84b52ac38c35cd141af8680d8e2c73c3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306435148268352986, guid: 84b52ac38c35cd141af8680d8e2c73c3, type: 3}
+      propertyPath: transitionSceneToMinigame
+      value: MinigameKey
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -16,4 +16,4 @@ MonoBehaviour:
   counterValueOnReset: 0
   hadBeenToWorld2: 0
   hadBeenToWorld3: 0
-  worldHoppingCounter: 2
+  worldHoppingCounter: 3
