@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Trade Gothic_0: 6297774620066552886
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

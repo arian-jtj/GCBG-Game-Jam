@@ -3115,6 +3115,7 @@ MonoBehaviour:
   - 
   - 
   - 
+  transitionSceneTo: World3
 --- !u!1 &1652344277
 GameObject:
   m_ObjectHideFlags: 0

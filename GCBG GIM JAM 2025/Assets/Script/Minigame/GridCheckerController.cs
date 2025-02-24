@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GridCheckerController : MonoBehaviour
 {
@@ -30,6 +32,8 @@ public class GridCheckerController : MonoBehaviour
     //         CheckAllGrid();
     //     }
     // }
+
+    public string transitionSceneTo;
 
     public void CheckAllGrid()
     {
@@ -147,18 +151,32 @@ public class GridCheckerController : MonoBehaviour
         if(allPiecesIsPossibility1 && !allPiecesIsPossibility2 && !allPiecesIsPossibility3)
         {
             Debug.Log("Possibility 1");
+            ChangeScene();
         }
         else if(!allPiecesIsPossibility1 && allPiecesIsPossibility2 && !allPiecesIsPossibility3)
         {
             Debug.Log("Possibility 2");
+            ChangeScene();
         }
         else if(!allPiecesIsPossibility1 && !allPiecesIsPossibility2 && allPiecesIsPossibility3)
         {
             Debug.Log("Possibility 3");
+            ChangeScene();
         }
         else
         {
             Debug.Log("Can't continue");
         }
+    }
+
+    public void ChangeScene()
+    {
+        StartCoroutine(LoadScene());
+    }
+
+    IEnumerator LoadScene()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadSceneAsync(transitionSceneTo);
     }
 }
