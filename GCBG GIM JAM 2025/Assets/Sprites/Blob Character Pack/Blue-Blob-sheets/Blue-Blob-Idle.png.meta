@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blue-Blob-Idle_0: -7206913964342604737
+      Blue-Blob-Idle_1: -7007017713193073011
+      Blue-Blob-Idle_2: -6976428316678988342
+      Blue-Blob-Idle_3: -6338603566325469672
+      Blue-Blob-Idle_4: -6709727932108282771
+      Blue-Blob-Idle_5: -7173712968922349190
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
