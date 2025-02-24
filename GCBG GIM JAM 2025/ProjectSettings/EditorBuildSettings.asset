@@ -32,6 +32,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigames/MinigameClover.unity
     guid: 5d53eb1cae9722247a05bbd5ba618d90
+  - enabled: 1
+    path: Assets/Scenes/Minigames/MinigameSunflower.unity
+    guid: 08cc15290e5f9f546b85e69ffd2c8007
+  - enabled: 1
+    path: Assets/Scenes/Minigames/MinigameKey.unity
+    guid: b70290ffddbbf474f9231ee9f56fa752
+  - enabled: 1
+    path: Assets/Scenes/Cutscene/Bad.unity
+    guid: ea1c786cd5e5e56489e1c9ac988f33e3
+  - enabled: 1
+    path: Assets/Scenes/Cutscene/Normal.unity
+    guid: 45d615976c7c482499622ea5a410856d
+  - enabled: 1
+    path: Assets/Scenes/Cutscene/Opening.unity
+    guid: 12ef781bdb922fe42993e87ae4c6fc6d
+  - enabled: 1
+    path: Assets/Scenes/Cutscene/True.unity
+    guid: 423a9f8ca56fff341a2990f20c6d683a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: dada7f51dd8e9784896518538676915c, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 77c8f91df72392d4699edcca5faf3fd1, type: 3}
